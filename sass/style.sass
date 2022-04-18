@@ -1,0 +1,64 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    list-style: none
+
+#corpo
+    width: 592px
+    margin: auto
+
+    header
+        img
+            display: block
+            margin: auto
+        margin-bottom: 7rem
+
+    main
+        display: flex
+        flex-direction: column
+        gap: 2rem
+        text-align: center
+        margin-bottom: 7rem
+
+        h1
+            font-family: variables.$fonte-secundaria
+            font-size: 3.2rem
+            font-weight: 400
+
+            strong
+                color: variables.$texto-destaque
+        
+        p
+            font-family: variables.$fonte-principal
+            line-height: 2
+            color: variables.$text-color
+            font-size: .9rem
+
+            span
+                color: variables.$texto-destaque
+
+footer
+    padding: 1rem
+    border-top: 2px solid variables.$border-color
+    ul
+        display: flex
+        justify-content: center
+        gap: 2rem
+        
+        a
+            text-decoration: none
+            color: variables.$texto-destaque
+            font-size: 1.2rem
+            font-family: variables.$fonte-principal
+        
+        a:hover 
+            text-decoration: underline
+
+.balls
+    position: fixed
+    bottom: 0
+    right: 0
