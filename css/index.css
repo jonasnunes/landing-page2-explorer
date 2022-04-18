@@ -9,12 +9,22 @@
   width: 592px;
   margin: auto;
 }
+@media (max-width: 600px) {
+  #corpo {
+    width: 80%;
+  }
+}
 #corpo header {
   margin-bottom: 7rem;
 }
 #corpo header img {
   display: block;
   margin: auto;
+}
+@media (max-width: 400px) {
+  #corpo header img {
+    width: 90%;
+  }
 }
 #corpo main {
   display: flex;
@@ -27,6 +37,11 @@
   font-family: "Inter", sans-serif;
   font-size: 3.2rem;
   font-weight: 400;
+}
+@media (max-width: 310px) {
+  #corpo main h1 {
+    font-size: 2.4rem;
+  }
 }
 #corpo main h1 strong {
   color: #FF9900;
@@ -64,6 +79,11 @@ footer ul a:hover {
   position: fixed;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 800px) {
+  .balls {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
